@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>    
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: white;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          min-width: 120px;
+          z-index: 1;
+          margin-left: 15px;
+        }
+        
+        .dropdown-content a{
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          font-size: 14px;
+        }
+
+        .dropdown-content a:hover {background-color: #f1f1f1}
+        
+        .dropdown:hover .dropdown-content {display: block;}
+        </style>
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+    <title>Shoe Website ─ Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body>
+   <header>
+    <div class="logo">
+        <a href="index.html"><img src="image/logo.jpg" alt=""></a>
+    </div>
+    <nav>
+        <button onclick="window.location.href='index.html'">Home</button>
+        <div class="dropdown">
+        <button>Categories</button>
+            <div class="dropdown-content">
+                <a href="men.html">Men</a>
+                <a href="women.html">Women</a>
+            </div>
+        </div>
+        <button onclick="window.location.href='contact.html'">Contact Us</button>
+    </nav>
+   </header>
+
+   <div class="faq">
+    <h2>Q: Why Nike?</h2>
+    <h3>A: This is where you praise the company. You can choose to explain the positive associations you have had with Nike or your love for the athletes or games they sponsor
+        Make the interviewer believe that<br> you are intentional with your application and would like to work at Nike from the bottom of your heart. Also, ensure that you research 
+        extensively beforehand to identify things that are praiseworthy about Nike.</h3>
+    <br>
+    <h2>Q: What Does Nike Mean?</h2>
+    <h3>A: You should find out as much information about Nike before you appear for an interview. Do you know what their logo snd slogan mean? Can you tell and resonate with their 
+        values? The only way to succeed in<br> such an interview is to convince the interviewer that you know sufficient information about the hiring company. Please answer this 
+        question confidently and ensure that you get it right.</h3>
+    <br>
+    <h2>Q: What is Our Motto?</h2>
+    <h3>A: This is the easiest Nike question that you can ever be asked. You have definitely seen t-shirts and even adverts with Nike’s motto. It is one of the most encouraging 
+        slogans around, which also contributed to<br> Nike’s popularity. Therefore, make sure that you get it right and convince the interviewer that you know much about Nike.</h3>
+    <br>
+    <h2>Q: What Is Our Mission?</h2>
+    <h3>A: Nike has one of the simplest missions in all the sportswear companies in the world. It extensively focuses on athletes, who form a significant part of their market and 
+        interest. Show the interviewer that you<br> know a great deal of information about the corporation to increase your chances of landing the job. The research you conduct before 
+        the interview must be extensive.</h3>
+    <br>
+    <h2>Q: What are Our Core Values?</h2>
+    <h3>A: The mission, vision, and core values go hand in hand. These are usually some of the critical information that you need to know about an organization. Remember, you will 
+        also be required to stick to these values<br> when working for Nike. You can easily obtain such information from Nike’s website.</h3>
+    </div>
+
+    <footer style="position: fixed; bottom: 0;">
+            <div class="customerservice">
+                <p class="title2">CUSTOMER SERVICE</p>
+                <p><a href="contact.html" class="footerlinks">Contact Us</a><p>
+                <p><a href="faq.html" class="footerlinks">FAQs</a></p>
+            </div>
+            <div class="policies">
+                <p class="title2">POLICIES</p>
+                <p><a href="privacy.html" class="footerlinks">Privacy & Cookie Policy</a></p>
+                <p><a href="terms.html" class="footerlinks">Terms & Conditions</a></p>
+                <a href="review.html" class="footerlinks">Review Guidelines</a>
+            </div>
+            <div class="followus">
+                <p class="title2">FOLLOW US</p>
+                <div class="socials" id="socials">
+                    <a href="http://www.facebook.com"><img src="image/icons/facebook.png" alt=""></a>
+                    <a href="http://www.instagram.com"><img src="image/icons/instagram.png" alt=""></a>
+                    <a href="http://www.twitter.com"><img src="image/icons/twitter.png" alt="" id="twitter"></a>
+                </div>
+        </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

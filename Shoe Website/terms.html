@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>    
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: white;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          min-width: 120px;
+          z-index: 1;
+          margin-left: 15px;
+        }
+        
+        .dropdown-content a{
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          font-size: 14px;
+        }
+
+        .dropdown-content a:hover {background-color: #f1f1f1}
+        
+        .dropdown:hover .dropdown-content {display: block;}
+        </style>
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+    <title>Shoe Website ─ Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body>
+   <header>
+    <div class="logo">
+        <a href="index.html"><img src="image/logo.jpg" alt=""></a>
+    </div>
+    <nav>
+        <button onclick="window.location.href='index.html'">Home</button>
+        <div class="dropdown">
+        <button>Categories</button>
+            <div class="dropdown-content">
+                <a href="men.html">Men</a>
+                <a href="women.html">Women</a>
+            </div>
+        </div>
+        <button onclick="window.location.href='#about'">About</button>
+        <button onclick="window.location.href='contact.html'">Contact Us</button>
+    </nav>
+   </header>
+
+    <div class='policy'>
+        <p class="title"><b>TERMS & CONDITIONS</b></p>
+        <p>
+            These Website Terms of Use apply to the website owned and operated by True Alliance Brands under the domain name Nike.<br>
+            Your use of the information, graphics, text, software and materials (Content) on the Website is governed by these Terms of Use. If you do not<br> 
+            agree with these Terms of Use you should cease using the Website. The Website is operated in Georgia and references to currency are in Geogian<br> 
+            dollars unless otherwise specified.
+        </p>
+    </div>
+
+    <footer style="position: fixed; bottom: 0;">
+        <div class="customerservice">
+            <p class="title2">CUSTOMER SERVICE</p>
+            <p><a href="contact.html" class="footerlinks">Contact Us</a><p>
+            <p><a href="faq.html" class="footerlinks">FAQs</a></p>
+        </div>
+        <div class="policies">
+            <p class="title2">POLICIES</p>
+            <p><a href="privacy.html" class="footerlinks">Privacy & Cookie Policy</a></p>
+            <p><a href="terms.html" class="footerlinks">Terms & Conditions</a></p>
+            <a href="review.html" class="footerlinks">Review Guidelines</a>
+        </div>
+        <div class="followus">
+            <p class="title2">FOLLOW US</p>
+            <div class="socials" id="socials">
+                <a href="http://www.facebook.com"><img src="image/icons/facebook.png" alt=""></a>
+                <a href="http://www.instagram.com"><img src="image/icons/instagram.png" alt=""></a>
+                <a href="http://www.twitter.com"><img src="image/icons/twitter.png" alt="" id="twitter"></a>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
